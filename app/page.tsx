@@ -123,7 +123,7 @@ export default function RayModelEbook() {
  <section
   id="section-0"
   className="ebook-section bg-gradient-to-br from-primary via-secondary to-primary geometric-pattern flex items-center justify-center p-4 sm:p-6 relative bg-cover bg-center"
-  style={{ backgroundImage: "url('11.mp4')" }}
+  style={{ backgroundImage: "url('2.jpg')" }}
 >
   <div className="text-center text-white max-w-sm sm:max-w-md w-full">
     <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 sm:p-8 mb-6 sm:mb-8">
