@@ -120,6 +120,9 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
   }
@@ -137,8 +140,10 @@
 }
 
 .scroll-container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /* Relax snap to avoid abrupt stops and enable native smooth behavior */
+  scroll-snap-type: y proximity;
+  overflow-y: auto;
+  scroll-behavior: smooth;
   height: 100vh;
 }
 
