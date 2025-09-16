@@ -159,8 +159,8 @@ export default function RayModelEbook() {
           <div className="text-center mb-6 sm:mb-8">
             <div className="flex justify-center items-center mb-4 sm:mb-6">
               <div className="w-6 sm:w-12 h-1 bg-white"></div>
-              <h2 className="text-xl sm:text-3xl font-bold text-white mx-2 sm:mx-4 text-balance">TODAY, YOU WILL...</h2>
-              <div className="w-6 sm:w-12 h-1 bg-white"></div>
+              <h2 className="text-xl sm:text-3xl font-bold text-orange mx-2 sm:mx-4 text-balance">TODAY, YOU WILL...</h2>
+              <div className="w-6 sm:w-12 h-1 bg-orange"></div>
             </div>
 
             <div className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-4 sm:mb-6 relative">
@@ -304,7 +304,7 @@ export default function RayModelEbook() {
 
 <div className="text-center mb-6">
       <video
-        src="/5.mp4" // put your animation file in public/ folder
+        src="/8.mp4" // put your animation file in public/ folder
         autoPlay
         loop
         muted
@@ -341,17 +341,21 @@ export default function RayModelEbook() {
           </div>
 
           <div className="text-center my-6">
-            <Card className="p-4 bg-gradient-to-r from-blue-100 to-purple-100 border-2 border-blue-300">
-              <img
-                src="/meme-about-drawing-straight-lines-physics-student-.gif"
-                alt="Meme about drawing straight lines in physics"
-                className="w-full max-w-sm mx-auto rounded-lg"
-              />
-              <p className="text-sm text-gray-600 mt-2 italic">
-                Physics teachers: "Just draw straight lines!" Me: 📏✏️😅
-              </p>
-            </Card>
-          </div>
+  <Card className="p-4 bg-gradient-to-r from-blue-100 to-purple-100 border-2 border-blue-300">
+    <video
+      src="/6.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full max-w-sm mx-auto rounded-lg"
+    />
+    <p className="text-sm text-gray-600 mt-2 italic">
+      Physics teachers: "Just draw straight lines!" Me: 📏✏️😅
+    </p>
+  </Card>
+</div>
+
 
           <div className="text-center mt-6 sm:mt-8">
             <Button
@@ -375,7 +379,7 @@ export default function RayModelEbook() {
 
           <div className="text-center mb-6">
             <img
-              src="/animated-gif-showing-light-rays-reflecting-off-pla.jpg"
+              src="/10.gif"
               alt="Light rays reflecting off plane mirror animation"
               className="w-full max-w-lg mx-auto rounded-lg shadow-lg border-2 border-primary/20"
             />
@@ -412,18 +416,48 @@ export default function RayModelEbook() {
             </Card>
           </div>
 
-          <div className="text-center my-6">
-            <Card className="p-4 bg-gradient-to-r from-pink-100 to-red-100 border-2 border-pink-300">
-              <img
-                src="/funny-meme-about-mirror-selfies-and-lateral-invers.gif"
-                alt="Meme about mirror selfies and physics"
-                className="w-full max-w-sm mx-auto rounded-lg"
-              />
-              <p className="text-sm text-gray-600 mt-2 italic">
-                When you realize your mirror selfie is laterally inverted! 🤳🔄
-              </p>
-            </Card>
-          </div>
+ <div className="text-center my-6">
+  <Card className="p-4 bg-gradient-to-r from-pink-100 to-red-100 border-2 border-pink-300">
+    <div
+      className="relative w-full max-w-sm mx-auto"
+      onClick={(e) => {
+        const video = e.currentTarget.querySelector("video") as HTMLVideoElement;
+        const overlay = e.currentTarget.querySelector(".play-overlay") as HTMLElement;
+        if (video) {
+          if (video.paused) {
+            video.play();
+            if (overlay) overlay.style.display = "none";
+          } else {
+            video.pause();
+            if (overlay) overlay.style.display = "flex";
+          }
+        }
+      }}
+    >
+      <video
+        src="/7.mp4"
+        className="w-full rounded-lg cursor-pointer"
+        controls={false}
+        muted={false}
+      />
+      <div className="play-overlay absolute inset-0 flex items-center justify-center bg-black/30 rounded-lg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-16 h-16 text-white opacity-80"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </div>
+    </div>
+    <p className="text-sm text-gray-600 mt-2 italic">
+      When you realize your mirror selfie is laterally inverted! 🤳🔄
+    </p>
+  </Card>
+</div>
+
+
 
           <div className="text-center mt-6 sm:mt-8">
             <Button
@@ -489,18 +523,22 @@ export default function RayModelEbook() {
             </Card>
           </div>
 
-          <div className="text-center my-6">
-            <Card className="p-4 bg-gradient-to-r from-green-100 to-teal-100 border-2 border-green-300">
-              <img
-                src="/funny-meme-about-pinhole-cameras-vs-modern-smartph.gif"
-                alt="Meme about pinhole cameras vs smartphones"
-                className="w-full max-w-sm mx-auto rounded-lg"
-              />
-              <p className="text-sm text-gray-600 mt-2 italic">
-                Pinhole cameras: The original "no filter needed"! 📸✨
-              </p>
-            </Card>
-          </div>
+<div className="text-center my-6">
+  <Card className="p-4 bg-gradient-to-r from-green-100 to-teal-100 border-2 border-green-300">
+    <video
+      src="/9.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full max-w-sm mx-auto rounded-lg"
+    />
+    <p className="text-sm text-gray-600 mt-2 italic">
+      Pinhole cameras: The original "no filter needed"! 📸✨
+    </p>
+  </Card>
+</div>
+
 
           <div className="text-center mt-6 sm:mt-8">
             <Button
