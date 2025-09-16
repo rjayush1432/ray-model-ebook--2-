@@ -304,7 +304,7 @@ export default function RayModelEbook() {
 
 <div className="text-center mb-6">
       <video
-        src="/8.mp4" // put your animation file in public/ folder
+        src="/11.mp4" // put your animation file in public/ folder
         autoPlay
         loop
         muted
