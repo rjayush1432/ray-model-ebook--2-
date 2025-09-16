@@ -481,14 +481,9 @@ export default function RayModelEbook() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <img
-              src="/pinhole-camera-diagram-showing-light-rays-passing-.jpg"
+              src="/12.png"
               alt="Pinhole camera diagram"
               className="w-full rounded-lg shadow-lg border-2 border-primary/20"
-            />
-            <img
-              src="/real-pinhole-camera-photograph-showing-inverted-im.jpg"
-              alt="Real pinhole camera photograph"
-              className="w-full rounded-lg shadow-lg border-2 border-secondary/20"
             />
           </div>
 
@@ -661,7 +656,7 @@ export default function RayModelEbook() {
               <div className="text-center mt-4">
                 <Card className="p-4 bg-gradient-to-r from-green-100 to-emerald-100 border-2 border-green-300">
                   <img
-                    src="/celebration-meme-physics-student-getting-answer-ri.gif"
+                    src="/2.gif"
                     alt="Success celebration meme"
                     className="w-32 mx-auto rounded-lg"
                   />
