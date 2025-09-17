@@ -127,8 +127,10 @@ export default function RayModelEbook() {
 >
   <div className="text-center text-white max-w-sm sm:max-w-md w-full">
     <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 sm:p-8 mb-6 sm:mb-8">
-      <h1 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-balance leading-tight text-white">
+    <h1 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-balance leading-tight text-white">
         Chapter-9
+      </h1>
+      <h1 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 text-balance leading-tight text-white">
         THE RAY MODEL OF LIGHT
       </h1>
       <p className="text-base sm:text-lg text-white text-pretty">
